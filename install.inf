@@ -1,0 +1,56 @@
+; Windows installer for black cursor theme by niivu.
+; Right click on this file ("install.inf"), and click "Install" to install the cursor theme.
+; After installing, change the cursors via windows mouse pointer settings dialog.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%text%,%10%\%CUR_DIR%\%hand%,%10%\%CUR_DIR%\%unavailable%,%10%\%CUR_DIR%\%vert%,%10%\%CUR_DIR%\%horz%,%10%\%CUR_DIR%\%dgn1%,%10%\%CUR_DIR%\%dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+[Scheme.Cur]
+"install.inf"
+"PrecisionSelect.cur"
+"NormalSelect.cur"
+"Move.cur"
+"HelpSelect.cur"
+"Unavailable.cur"
+"Handwriting.cur"
+"LinkSelect.cur"
+"WorkingInBackground.cur"
+"DiagonalResize2.cur"
+"DiagonalResize1.cur"
+"HorizontalResize.cur"
+"VerticalResize.cur"
+"TextSelect.cur"
+"AlternateSelect.cur"
+"Busy.ani"
+
+
+
+[Strings]
+CUR_DIR = "Cur"
+SCHEME_NAME = "Anoop"
+cross = "PrecisionSelect.cur"
+pointer = "NormalSelect.cur"
+move = "Move.cur"
+help = "HelpSelect.cur"
+unavailable = "Unavailable.cur"
+hand = "Handwriting.cur"
+link = "LinkSelect.cur"
+work = "WorkingInBackground.cur"
+dgn2 = "DiagonalResize2.cur"
+dgn1 = "DiagonalResize1.cur"
+horz = "HorizontalResize.cur"
+vert = "VerticalResize.cur"
+text = "TextSelect.cur"
+alternate = "AlternateSelect.cur"
+busy = "Busy.ani"
